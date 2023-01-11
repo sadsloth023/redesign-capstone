@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(47, 44%, 92%);
+    font-family: Lato, sans-serif;
+}
+
+li {
+    display: inline;
+  }
+
+h1{
+    font-size: 1.75rem;
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Lemon, cursive;
+    height: 8vh;
+}
+
+#hamburger{
+    display: none;
+}
+
+
+nav {
+    display: flex;
+    background-color: #E7E0C9;
+}
+
+.navitems{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.25rem;
+    color: #6F6F6F;
+    padding: 0;
+    
+}
+
+.navbutton{
+    color: #6F6F6F;
+    font-style: normal;
+}
+
+.navbutton:hover {
+    color: black;
+    font-style: bold;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+}
+
+#block1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#block2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#block3{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#block4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image{
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-color: #E7E0C9;
+    text-align: center;
+}
+
+.foottext{
+    color: #6F6F6F;
+}
+
+.foottext:hover{
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .overlay{
+        top: 85px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #grid{
+        display: block;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+}
